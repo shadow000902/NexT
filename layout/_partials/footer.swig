@@ -44,6 +44,26 @@
 #}</div>
 {% endif %}
 
+
+<span id="busuanzi_container_site_uv">
+  <span class="post-meta-divider">|</span>
+  <span class="post-meta-item-icon">
+    <i class="fa fa-users"></i>
+  </span>
+  <span id="busuanzi_value_site_uv"></span>
+</span>
+
+<span id="busuanzi_container_site_pv">
+  <span class="post-meta-divider">|</span>
+  <span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+  </span>
+  <span id="busuanzi_value_site_pv"></span>
+</span>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
 {% if theme.footer.powered.enable and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
 {% endif %}
