@@ -487,7 +487,7 @@ disqus:
   lazyload: false
 
 # Hypercomments
-hypercomments_id: 90954
+# hypercomments_id: 90954
 
 # changyan
 changyan:
@@ -522,16 +522,16 @@ valine:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github Username
-  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: shadow000902 # MUST HAVE, Your Github Username
+  github_repo: https://github.com/shadow000902/shadow000902.github.io.git # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: e4e3e6e19130a1a9423b # MUST HAVE, Github client id for the Gitment
+  client_secret: 7392d0f6b6b35de0c6185cb1aca008fa6c95f2bc # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
