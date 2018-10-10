@@ -104,7 +104,7 @@
 .sidebar-toggle { display: none; }
 
 .footer-inner {
-  padding-left: 260px;
+  padding-left: 0;
 
   +tablet() {
     width: auto;
@@ -129,3 +129,37 @@
   }
 }
 
+// 以下为新增代码！！
+header{ width: 98% !important; }
+header.post-header {
+  width: auto !important;
+}
+.container .main-inner { width: 98%; }
+.content-wrap { width: calc(100% - 250px); }
+
+.header {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto !important;
+  }
+}
+
+.container .main-inner {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto !important;
+  }
+}
+
+.content-wrap {
+  +tablet() {
+    width: 100% !important;
+  }
+  +mobile() {
+    width: 100% !important;
+  }
+}
