@@ -1,10 +1,12 @@
 .DS_Store
 .idea/
+.github/
 *.log
 *.iml
 yarn.lock
 package-lock.json
 node_modules/
+test/
 
 # Ignore optional external libraries
 source/lib/*
