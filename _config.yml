@@ -104,7 +104,7 @@ scheme: Pisces
 #scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 
 # ---------------------------------------------------------------
@@ -347,14 +347,14 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: normal
+  highlight_theme: night eighties
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
-    style:
+    style: mac
 
 back2top:
   enable: true
@@ -365,7 +365,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -382,7 +382,7 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
+  enable: true
   permalink: https://github.com/shadow000902
   title: Follow me on GitHub
 
@@ -616,9 +616,9 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
+  enable: true
+  appid: qjdKXm0RH80J6HWCj1X3DREC-gzGzoHsz      # Your leancloud application appid
+  appkey: 4rSep9EijQDvdmVi5cPCzgxz              # Your leancloud application appkey
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Just go go # Comment box placeholder
@@ -639,7 +639,7 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
+  enable: false
   github_id: shadow000902 # Github repo owner
   repo: shadow000902.github.io # Repository name to store issues.
   client_id: e0e666645d713454f70e # Github Application Client ID
