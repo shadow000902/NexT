@@ -180,7 +180,7 @@ social:
   github: https://github.com/shadow000902 || fab fa-github
   twitter: https://twitter.com/shadow000902 || fab fa-twitter
   facebook: https://facebook.com/shadow000902 || fab fa-facebook
-  jianshu: http://www.jianshu.com/u/6d646c911d4a || university
+  jianshu: http://www.jianshu.com/u/6d646c911d4a || fa fa-university
 
 social_icons:
   enable: true
