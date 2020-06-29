@@ -56,9 +56,8 @@ footer:
 
   # Icon between year and copyright info.
   icon:
-    # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
-    # `heart` is recommended with animation in red (#ff0000).
-    name: heartbeat
+    # Icon name in Font Awesome. See: https://fontawesome.com/icons
+    name: fa fa-heart
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
@@ -117,14 +116,14 @@ darkmode: true
 # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: / || home
-  about: /about/ || user
-  tags: /tags/ || tags
-  categories: /categories/ || th
-  archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  #schedule: /schedule/ || fa fa-calendar
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -161,6 +160,15 @@ sidebar:
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
 
+# Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  url: /images/avatar.jpg
+  # If true, the avatar will be dispalyed in circle.
+  rounded: false
+  # If true, the avatar will be rotated with the cursor.
+  rotated: false
+
 # Posts / Categories / Tags in sidebar.
 site_state: true
 
@@ -169,10 +177,9 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || github
-  github: https://github.com/shadow000902 || github
-  twitter: https://twitter.com/shadow000902 || twitter
-  facebook: https://facebook.com/shadow000902 || facebook
+  github: https://github.com/shadow000902 || fab fa-github
+  twitter: https://twitter.com/shadow000902 || fab fa-twitter
+  facebook: https://facebook.com/shadow000902 || fab fa-facebook
   jianshu: http://www.jianshu.com/u/6d646c911d4a || university
 
 social_icons:
@@ -182,7 +189,7 @@ social_icons:
 
 # Blog rolls
 links_settings:
-  icon: link
+  icon: fa fa-link
   title: Links
   # Available values: block | inline
   layout: block
@@ -190,21 +197,8 @@ links_settings:
 links:
   #Title: http://yoursite.com
 
-# Sidebar Avatar
-avatar:
-  # In theme directory (source/images): /images/avatar.gif
-  # In site directory (source/uploads): /uploads/avatar.gif
-  # You can also use other linking images.
-  url: /images/avatar.jpg
-
-  # If true, the avatar would be dispalyed in circle.
-  rounded: false
-  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
-  opacity: 1
-  # If true, the avatar would be rotated with the cursor.
-  rotated: false
-
-# Table Of Contents in the Sidebar
+# Table of Contents in the Sidebar
+# Front-matter variable (unsupport wrap expand_all).
 toc:
   enable: true
   # Automatically add list number to toc.
@@ -222,7 +216,7 @@ chat:
   enable: false
   #service: chatra
   #service: tidio
-  icon: comment # Icon name in Font Awesome, set false to disable icon.
+  icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
   text: Chat # Button text, change it as you wish.
 
 
@@ -265,21 +259,21 @@ reward_settings:
   # If true, reward will be displayed in every article by default.
   enable: false
   animation: false
-  comment: Donate comment here
+  #comment: Donate comment here.
 
 reward:
   #wechatpay: /images/wechatpay.png
+  #alipay: /images/alipay.png
   #paypal: /images/paypal.png
-  alipay: /images/pay.png
   #bitcoin: /images/bitcoin.png
 
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  #Twitter: https://twitter.com/username || twitter
-  #Telegram: https://t.me/channel_name || telegram
-  #WeChat: /images/wechat_channel.jpg || wechat
-  #RSS: /atom.xml || rss
+  #Twitter: https://twitter.com/username || fab fa-twitter
+  #Telegram: https://t.me/channel_name || fab fa-telegram
+  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  #RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -310,6 +304,15 @@ post_navigation: left
 # Custom Page Settings
 # See: https://theme-next.org/docs/theme-settings/custom-pages
 # ---------------------------------------------------------------
+
+# TagCloud settings for tags page.
+tagcloud:
+  # All values below are same as default, change them by yourself.
+  min: 12 # Minimun font size in px
+  max: 30 # Maxium font size in px
+  start: "#ccc" # Start color (hex, rgba, hsla or color keywords)
+  end: "#111" # End color (hex, rgba, hsla or color keywords)
+  amount: 200 # Amount of tags, change it if you have more than 200 tags
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
@@ -385,18 +388,6 @@ github_banner:
   enable: true
   permalink: https://github.com/shadow000902
   title: Follow me on GitHub
-
-
-# TagCloud settings for tags page.
-tagcloud:
-  # If true, font size, font color and amount of tags can be customized
-  enable: true
-  # All values below are same as default, change them by yourself
-  min: 12 # min font size in px
-  max: 30 # max font size in px
-  start: "#ccc" # start color (hex, rgba, hsla or color keywords)
-  end: "#111" # end color (hex, rgba, hsla or color keywords)
-  amount: 200 # amount of tags, change it if you have more than 200 tags
 
 
 # ---------------------------------------------------------------
@@ -505,8 +496,6 @@ baidu_push: false
 
 # Math Formulas Render Support
 math:
-  enable: true
-
   # Default (true) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
   # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
@@ -528,10 +517,18 @@ math:
 # Dependencies: https://github.com/theme-next/theme-next-pjax
 pjax: false
 
+# FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
+# For more information: https://fancyapps.com/fancybox
+fancybox: true
+
 # A JavaScript library for zooming images like Medium.
 # Do not enable both `fancybox` and `mediumzoom`.
 # For more information: https://github.com/francoischalifour/medium-zoom
 mediumzoom: false
+
+# Vanilla JavaScript plugin for lazyloading images.
+# For more information: https://github.com/ApoorvSaxena/lozad.js
+lazyload: false
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -719,11 +716,11 @@ firestore:
 busuanzi_count:
   enable: false
   total_visitors: true
-  total_visitors_icon: user
+  total_visitors_icon: fa fa-user
   total_views: true
-  total_views_icon: eye
+  total_views_icon: fa fa-eye
   post_views: true
-  post_views_icon: eye
+  post_views_icon: fa fa-eye
 
 
 # ---------------------------------------------------------------
@@ -746,8 +743,8 @@ algolia_search:
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: true
-  # if auto, trigger search by changing input
-  # if manual, trigger search by pressing enter key or search button
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
   trigger: auto
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
@@ -846,29 +843,15 @@ motion:
     # Only for Pisces | Gemini.
     sidebar: slideUpIn
 
-# Fancybox. There is support for old version 2 and new version 3.
-# Choose only one variant, do not need to install both.
-# To install 2.x: https://github.com/theme-next/theme-next-fancybox
-# To install 3.x: https://github.com/theme-next/theme-next-fancybox3
-fancybox: true
-
-# Polyfill to remove click delays on browsers with touch UIs.
-# Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: false
-
-# Vanilla JavaScript plugin for lazyloading images.
-# Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
-lazyload: false
-
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
 # For more information: https://github.com/HubSpot/pace
 pace:
-  enable: false
+  enable: true
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: minimal
+  theme: mac-osx
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
@@ -905,9 +888,9 @@ vendors:
   # anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
   anime:
 
-  # Internal version: 4.7.0
-  # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
-  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+  # Internal version: 5.13.0
+  # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
+  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
   fontawesome:
 
   # MathJax
