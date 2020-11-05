@@ -71,6 +71,15 @@
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 
+<script>
+    window.__bl = {
+        config: {
+            pid:"d6kvwm2md3@f64cc901da27cfb",appType:"web",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?",sendResource:true,enableLinkTrace:true,behavior:true
+        }
+    }
+</script>
+<script type="text/javascript" src="https://retcode.alicdn.com/retcode/bl.js" crossorigin></script>
+
 <div>
   <script type="text/javascript">
     document.write(unescape("%3Cspan id='cnzz_stat_icon_1278741489'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1278741489%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
